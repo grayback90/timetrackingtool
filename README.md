@@ -13,4 +13,4 @@ Additionally shows me the time I worked and the time I need to work on the day.
 
 ## CSS Help
 * https://tailwindcss.com/docs/preflight
-* https://flowbite.com/docs/typography/headings/
+* https://v1.tailwindcss.com/components/forms
