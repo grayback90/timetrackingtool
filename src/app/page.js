@@ -2,17 +2,23 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-min flex-col items-center justify-between pt-24 px-24">
       <header>
-        <h1 className="underline underline-offset-3 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">TimeTrackingTool by grayback90</h1>
+        <h1 className="mb-20 underline underline-offset-3 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">TimeTrackingTool by grayback90</h1>
       </header>
-      <form className="w-full max-w-lg">
-        <div className="flex flex-wrap -mx-3 mb-2">
+      <div className="mb-10 flex flex-wrapped">
+        <p className="text-red-700 ">Time left: 4,5h /// Time worked: 3,5h</p>
+      </div>
+      <div className="mb-10 flex flex-wrapped">
+        <p className="text-green-700 ">Time left: 0h /// Time worked: 8h</p>
+      </div>
+      <form className="w-full max-w-full">
+        <div className="flex flex-wrap -mx-3 mb-8">
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
               Subject
             </label>
-            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Support-13131"/>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Support-13131"/>
           </div>
           <div className="w-full md:w-1/3 px-3">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -37,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </form>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 pt-50 rounded">
         Save Entry
       </button>
     </main>
