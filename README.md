@@ -15,3 +15,7 @@ Additionally shows me the time I worked and the time I need to work on the day.
 * https://tailwindcss.com/docs/preflight
 * https://v1.tailwindcss.com/components/forms
 * https://tailwindcomponents.com
+
+## Database
+* Postgre SQL: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+* Connection: https://www.simplenextjs.com/posts/next-postgresql
