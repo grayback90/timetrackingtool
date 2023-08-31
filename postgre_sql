@@ -1,0 +1,60 @@
+-- password: admin
+
+-- Database: timetrackingtool
+
+-- DROP DATABASE IF EXISTS timetrackingtool;
+
+CREATE DATABASE timetrackingtool
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'German_Germany.1252'
+    LC_CTYPE = 'German_Germany.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+-- SCHEMA: timetrackingtool
+
+-- DROP SCHEMA IF EXISTS timetrackingtool ;
+
+CREATE SCHEMA IF NOT EXISTS timetrackingtool
+    AUTHORIZATION postgres;
+
+-- Table: timetrackingtool.worklogs
+
+-- DROP TABLE IF EXISTS timetrackingtool.worklogs;
+
+CREATE TABLE IF NOT EXISTS timetrackingtool.worklogs
+(
+    id integer NOT NULL,
+    subject character varying(128) COLLATE pg_catalog."default",
+    "time" integer NOT NULL,
+    company "char",
+    date date,
+    CONSTRAINT worklogs_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS timetrackingtool.worklogs
+    OWNER to postgres;
+
+-- Table: timetrackingtool.summary
+
+-- DROP TABLE IF EXISTS timetrackingtool.summary;
+
+CREATE TABLE IF NOT EXISTS timetrackingtool.summary
+(
+    id integer NOT NULL,
+    date date,
+    worktime integer,
+    month_todo integer,
+    month_done integer,
+    CONSTRAINT summary_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS timetrackingtool.summary
+    OWNER to postgres;
