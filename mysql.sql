@@ -3,7 +3,7 @@ CREATE TABLE if not exists `timetrackingtool`.`worklogs` (
   `subject` VARCHAR(45) NULL,
   `time` INT NULL,
   `company` VARCHAR(45) NULL,
-  `date` DATETIME NULL,
+  `day_date` DATETIME NULL,
   PRIMARY KEY (`idworklogs`));
 
 CREATE TABLE if not exists `timetrackingtool`.`summary` (

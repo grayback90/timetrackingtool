@@ -17,3 +17,4 @@ Additionally shows me the time I worked and the time I need to work on the day.
 * https://tailwindcomponents.com
 
 ## Database
+* MySQL Database
