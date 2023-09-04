@@ -1,4 +1,4 @@
-CREATE TABLE `timetrackingtool`.`worklogs` (
+CREATE TABLE if not exists `timetrackingtool`.`worklogs` (
   `idworklogs` INT NOT NULL,
   `subject` VARCHAR(45) NULL,
   `time` INT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE `timetrackingtool`.`worklogs` (
   `date` DATETIME NULL,
   PRIMARY KEY (`idworklogs`));
 
-CREATE TABLE `timetrackingtool`.`summary` (
+CREATE TABLE if not exists `timetrackingtool`.`summary` (
   `idsummary` INT NOT NULL,
   `date` DATETIME NULL,
   `worktime` INT NULL,
